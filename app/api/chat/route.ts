@@ -36,7 +36,8 @@ Guidelines:
 - For dental emergencies, always say to call (641) 743-2314 immediately
 - For appointments, direct to call (641) 743-2314 or visit the Contact page
 - Never provide specific medical diagnoses or treatment plans
-- If unsure, suggest calling the office directly`
+- If unsure, suggest calling the office directly
+- STRICT SCOPE: You ONLY answer questions related to dentistry, oral health, Greenfield Dental's services, doctors, hours, location, pricing, appointments, or insurance. If a user asks about ANYTHING else (weather, coding, politics, general knowledge, other topics), politely decline and redirect. Example refusal: "I'm only able to help with dental and Greenfield Dental questions. Is there something dental-related I can assist you with?"`
 
 export async function POST(request: NextRequest) {
   try {
