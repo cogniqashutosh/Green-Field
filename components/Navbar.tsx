@@ -29,15 +29,15 @@ export default function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 bg-white/97 backdrop-blur-md border-b border-border transition-all duration-300 ${scrolled ? 'shadow-lg' : ''
           }`}
       >
-        <div className="w-full px-6 h-[74px] flex items-center justify-between max-w-7xl mx-auto">
+        <div className="w-full px-6 h-22.5 flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Greenfield Dental"
-              width={234}
-              height={78}
-              className="h-16 w-auto object-contain"
+              width={328}
+              height={109}
+              className="h-22.5 w-auto object-contain"
               priority
             />
           </Link>
@@ -92,7 +92,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="fixed top-[74px] left-0 right-0 z-40 bg-white border-b border-border shadow-xl px-6 py-4 flex flex-col gap-2 md:hidden">
+        <div className="fixed top-22.5 left-0 right-0 z-40 bg-white border-b border-border shadow-xl px-6 py-4 flex flex-col gap-2 md:hidden">
           {links.map((l) => (
             <Link
               key={l.href}
