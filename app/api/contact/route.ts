@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     await resend.emails.send({
       from: 'Greenfield Dental Website <onboarding@resend.dev>',
       to: 'greenfielddds@gmail.com',
-      reply_to: email || undefined,
+      replyTo: email || undefined,
       subject: `New Appointment Request — ${firstName} ${lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; background: #f7fbfd; border-radius: 12px;">
